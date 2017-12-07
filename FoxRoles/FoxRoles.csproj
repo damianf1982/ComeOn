@@ -254,6 +254,7 @@
     <Compile Include="Models\GymSessions.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Profiles.cs" />
     <Compile Include="Models\RoleViewModel.cs" />
     <Compile Include="Models\ViewGymsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
