@@ -10,7 +10,7 @@ using FoxRoles.Models;
 
 namespace FoxRoles.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Nobody")]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;
