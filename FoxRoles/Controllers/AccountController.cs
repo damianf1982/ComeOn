@@ -160,10 +160,25 @@ namespace FoxRoles.Controllers
                 list.Add(new SelectListItem() { Value = role.Name, Text = role.Name });
             ViewBag.Roles = list;
             return View();
+
         }
 
-        //
-        // POST: /Account/Register
+        //{
+        //        var list = new SelectList(new[]
+        //        {
+        //               new { ID = "1", Name = "Client" },
+        //               new { ID = "2", Name = "Admin" },
+        //               new { ID = "3", Name = "" },
+        //        },
+        //            "ID", "Name", 1);
+
+            // ViewData["list"] = list;
+            // return View();
+
+            //}
+
+            //
+            // POST: /Account/Register
         [HttpPost]
         [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]

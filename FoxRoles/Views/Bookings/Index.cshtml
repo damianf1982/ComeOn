@@ -11,28 +11,28 @@
 </p>
 <table class="table">
     <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.GymSessionId)*
+        </th>*@
         <th>
-            @Html.DisplayNameFor(model => model.GymSessionId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GymSessionName)
+            @*@Html.DisplayNameFor(model => model.GymSessionName)*@ <h4>Class Name</h4> 
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.GymSessionId)
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.GymSessionName)
         </td>
-        <td>
+        @*<td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
+        </td>*@
     </tr>
 }
 
