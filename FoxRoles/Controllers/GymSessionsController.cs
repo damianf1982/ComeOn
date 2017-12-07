@@ -10,7 +10,7 @@ using FoxRoles.Models;
 
 namespace FoxRoles.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class GymSessionsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -37,6 +37,7 @@ namespace FoxRoles.Controllers
         //}
 
         // GET: GymSessions/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
